@@ -1,0 +1,107 @@
+ /* Reset default browser styles */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style for the body */
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* Style for the display text */
+.display {
+    color: #fcfcfc;
+    overflow: hidden;
+    padding: 20px;
+    text-align: right;
+    font-size: 2em;
+    border-radius: 10px;
+    background-color: #401a63;
+    width: calc(100% - 40px);
+}
+
+/* Style for the background container */
+.background {
+    background-color: blueviolet;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Style for the screen container */
+.screen {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Base styles for buttons */
+.button {
+    background-color: #f87d09;
+    background-image: linear-gradient(to right, #eb6f0a, #780adf);
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2em;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    flex: 1 1 30%;
+    max-width: 30%;
+}
+
+/* Hover effect for buttons */
+.button:hover {
+    background-image: linear-gradient(to right, #f55e07, #4CAF50);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+/* Style for the button containers */
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.operator {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.number {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+/* Responsive styles */
+@media (max-width: 480px) {
+    .button {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    .display {
+        font-size: 1.5em;
+        padding: 15px;
+    }
+}
